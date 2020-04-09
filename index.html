@@ -1,0 +1,197 @@
+<!--This is the first file that loads when your website is loaded-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      title{
+        color: brown;
+      }
+
+      dl {
+  color: gray;
+  margin: 0.5em 0;
+      }
+  
+  dt {
+    font-weight: bold;
+    color: purple;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+
+  abbr, time {
+    color: green;
+  }  
+    </style>
+  </head>
+  <body>
+    <header slot="s">Helo</header>
+    <h1>Chiken Burger Combo</h1>
+    <img src="images/food2.jpeg" alt="My test image1">
+    <p><abbr title="Chiken Burger">CB</abbr> combo includes : </p>
+      <ul>
+        <li>Chiken Burger</li>
+        <li>French Fries</li>
+        <li>Mayonnaise</li>
+        <li>Spicy Palak Chutney</li>
+        <li>200ml coke</li>
+      </ul>
+      <div style="background-color: blue;padding: 20px;margin: 20px;">
+        Outer Block Piece 1
+        <p style="padding: 20px;background-color: brown;margin: 10px;">Inner block</p>
+      Outer Block Piece 2</div>
+      <p>Owners of dogs will have noticed that, 
+        <a href="https://www.goodreads.com/work/quotes/1558637-the-portable-atheist-essential-readings-for-the-non-believer" target="_blank">
+        <cite>The Portable Atheist: Essential Readings for the Nonbeliever</cite></a>
+        if you provide them with food and water and shelter and affection, 
+        they will think you are god. Whereas owners of cats are compelled to realize that, 
+        if you provide them with food and water and shelter and affection, 
+        they draw the conclusion that they are gods.</p>
+
+        <input type="button" value="This is First Button" disabled>
+        <input type="text" placeholder="Enter your input">
+
+        <pre>
+Heloo Hello
+              Hello 
+                  Hello 
+                    Hello
+        </pre>
+
+        <h1 style="font-size: 2rem;margin: 0;color: purple;">Advanced HTML Animals</h1>
+        <!--Description List-->
+        <dl>
+          <dt>Llama</dt>
+          <dd>Tall, wooly quadraped, pointy ears. Sometimes rideable, but grumpy and spits a lot. Big fan of list items.</dd>
+          <dt>Anaconda</dt>
+          <dd>A very large constrictor snake; travels rapidly by way of anchors to sneak up on his prey.</dd>
+          <dt>Hiphopapotamus</dt>
+          <dd>His description is bottomless.</dd>
+        </dl>
+        <!--AdvanceText Task Semantics -->
+        <h1>Advanced text semantics</h1>
+
+        <p>Let's start with a quote:</p>
+
+        <blockquote><q>By default, <abbr title="HyperText Markup Language">HTML </abbr>is accessible, if used correctly</q>.
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility" target="_blank">Accessibility.</a></blockquote>
+
+        <p><abbr title="Cascading Style sheet">CSS</abbr> can also be used to make web pages more, or less, accessible.</p>
+
+        <p>Chemical Formulae: H<sub>2</sub>0 (Water), C<sub>2</sub>H<sub>6</sub>O (Ethanol).</p>
+
+
+        <dl>
+          <dt>Dates:</dt>
+          <dl>
+            <time datetime="2019-12-25">December 25th 2019 (Christmas Day),</time>
+            <time datetime="2019-11-02"> November 2nd 2019 (Día de los Muertos).</time>
+          </dl>
+        </dl>
+       
+        <!--Tables-->
+       
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jagadeesh</td>
+              <td>jaga@gmail.com</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Suresh</td>
+              <td>suri@gmail.com</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>Karthik</td>
+              <td>karti@gmail.com</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Anil</td>
+              <td>anil@gmail.com</td>
+              <td>24</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </br>
+      <hr>
+      </br>
+
+        <!--Forms-->
+
+        <form action="#" autocomplete="on">
+          <div>
+            <label>FirstName : </label>
+            <input type="text" name="firstName" placeholder="Please Enter Your FirstName" style="border-radius: 3px;border-color: blue;width: 150px;">
+          </div>
+          <br>
+          <div>
+            <label>LastName : </label>
+            <input type="text" name="lastName" placeholder="Please Enter Your LastName" autocomplete="off"> 
+          </div>
+          <br>
+          <div>
+            <label>Email : </label>
+            <input type="email" name="email"> 
+          </div>
+          <br>
+          <div>
+            <label>Message : </label>
+            <textarea name="message"></textarea>
+          </div>
+          <br>
+          <div>
+            <label>Gender : </label>
+            <select name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+           
+          <br>
+          <div>
+            <label>Age : </label>
+            <input type="number" name="age" placeholder="Please Enter Your Age">
+          </div>
+
+          <br>
+          <div>
+            <label>Birthday : </label>
+            <input type="date" name="birthday">
+          </div>
+
+          <br>
+          <div>
+            <input type="submit" name="submit" value="Submit">
+          </div>
+        </form>
+
+        <div style="margin-top: 500px;"></div>
+           
+
+
+  </body>
+</html> 
